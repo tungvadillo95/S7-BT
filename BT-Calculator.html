@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <table>
+        <tr>
+            <td colspan="2">
+                <input type="number" id="a">
+            </td>
+            <td colspan="2">
+                <input type="number" id="b">
+            </td>
+        </tr>
+        <tr>
+            <td><button onclick="Cong()" type="button" ;>Addition(+)</button></td>
+            <td><button onclick="Tru()" type="button" ;>Subtraction(-)</button></td>
+            <td><button onclick="Nhan()" type="button" ;>Multiplication(X)</button></td>
+            <td><button onclick="Chia()" type="button" ;>Division(/)</button></td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td colspan="3"><input type="number" id="result"></td>
+        </tr>
+    </table>
+    <script>
+        function Cong() {
+            
+
+             var nhapa = +document.getElementById('a').value;
+             var nhapb = +document.getElementById('b').value;
+             document.getElementById('result').value= nhapa + nhapb;
+           
+        }
+        function Tru() {
+            var nhapa = +document.getElementById('a').value;
+            var nhapb = +document.getElementById('b').value;
+            document.getElementById('result').value= nhapa-nhapb;
+        }
+        function Nhan() {
+            var nhapa = +document.getElementById('a').value;
+            var nhapb = +document.getElementById('b').value;
+            document.getElementById('result').value= nhapa*nhapb;
+
+        }
+        function Chia() {
+            var nhapa = +document.getElementById('a').value;
+            var nhapb = +document.getElementById('b').value;
+            document.getElementById('result').value= nhapa/nhapb;
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
